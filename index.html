@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Moksha's personal blog about cybersecurity, bug bounty, and penetration testing.">
+    <meta name="keywords" content="Cybersecurity, Bug Bounty, PenTesting, Hacking, Automation">
+    <meta name="author" content="Moksha">
+    <title>Mohamed Abdelghany | Moksha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="x-icon.png" as="image">
+</head>
+<body>
+
+    <!-- ✅ العداد -->
+    <div class="loading-container">
+        <div class="counter">0%</div>
+    </div>
+
+    <div id="background"></div>
+
+    <header>
+        <div class="site-name">Moksha</div>
+        <div class="menu-icon" onclick="toggleMenu()" aria-label="Menu">☰</div>
+    </header>
+
+    <nav id="sidebar" aria-label="Sidebar">
+        <span class="close-btn" onclick="toggleMenu()" aria-label="Close">✖</span>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="tags.html">Tags</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="twitter-container">
+            <a href="https://x.com/ShellMoksha" class="twitter-icon" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <img src="twitter-icon.png" alt="Twitter" loading="lazy">
+            </a>
+        </div>
+    </nav>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search posts..." oninput="searchPosts()" aria-label="Search posts">
+    </div>
+
+    <div class="tags">
+        <span class="tag" onclick="filterByTag('Cybersecurity')" aria-label="Cybersecurity">Cybersecurity</span>
+        <span class="tag" onclick="filterByTag('Bug Bounty')" aria-label="Bug Bounty">Bug Bounty</span>
+        <span class="tag" onclick="filterByTag('PenTesting')" aria-label="PenTesting">PenTesting</span>
+    </div>
+
+    <div id="posts">
+        <div class="post" data-tags="Cybersecurity">
+            <h2>Post 1 - Cybersecurity</h2>
+            <p>Content about cybersecurity...</p>
+        </div>
+        <div class="post" data-tags="Bug Bounty">
+            <h2>Post 2 - Bug Bounty</h2>
+            <p>Content about bug bounty...</p>
+        </div>
+        <div class="post" data-tags="PenTesting">
+            <h2>Post 3 - PenTesting</h2>
+            <p>Content about penetration testing...</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Moksha. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

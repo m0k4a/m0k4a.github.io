@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tags related to Moksha's blog posts.">
+    <title>Tags - Moksha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="background"></div>
+
+    <header>
+        <div class="site-name">Moksha</div>
+        <div class="menu-icon" onclick="toggleMenu()" aria-label="Menu">☰</div>
+    </header>
+
+    <div id="overlay" onclick="toggleMenu()"></div>
+
+    <nav id="sidebar" aria-label="Sidebar">
+        <span class="close-btn" onclick="toggleMenu()" aria-label="Close">✖</span>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="tags.html">Tags</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Tags</h1>
+        <p>Click a tag to see related posts:</p>
+        <div class="tags">
+            <a href="javascript:void(0)" class="tag" onclick="filterPosts('Cybersecurity')" aria-label="Cybersecurity">#Cybersecurity</a>
+            <a href="javascript:void(0)" class="tag" onclick="filterPosts('BugBounty')" aria-label="Bug Bounty">#BugBounty</a>
+            <a href="javascript:void(0)" class="tag" onclick="filterPosts('Hacking')" aria-label="Hacking">#Hacking</a>
+            <a href="javascript:void(0)" class="tag" onclick="filterPosts('Automation')" aria-label="Automation">#Automation</a>
+        </div>
+        <div id="tag-results"></div>
+    </main>
+
+    <footer>
+        <p>© 2025 M0k4a. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
